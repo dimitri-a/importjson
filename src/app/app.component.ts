@@ -10,7 +10,7 @@ export class AppComponent {
   constructor() {
     axios.get('./assets/data.json')
       .then((response) => {
-        console.log(response.data);
+        console.log(response.data[0].address);
       });
   }
 }
