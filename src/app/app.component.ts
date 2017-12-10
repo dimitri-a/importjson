@@ -8,8 +8,7 @@ import axios from 'axios';
 })
 export class AppComponent {
   constructor() {
-
-    axios.get('./data.json')
+    axios.get('./assets/data.json')
       .then((response) => {
         console.log(response.data);
       });
